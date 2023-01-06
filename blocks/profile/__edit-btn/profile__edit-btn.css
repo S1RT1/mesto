@@ -1,0 +1,65 @@
+.profile__edit-btn {
+    border: 1px solid white;
+    width: 24px;
+    height: 24px;
+    background-image: url(../../../images/Edit\ Button.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    transition: opacity .5s ease;
+    display: flex;
+    max-width: 24px;
+    max-height: 24px;
+    transition: all 0.7s ease-in-out;
+}
+
+.profile__edit-btn:hover {
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+
+    
+    .profile__edit-btn {
+        border: 1px solid white;
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../images/Edit\ Button.svg);
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: center;
+        transition: opacity .5s ease;
+        display: flex;
+        max-width: 24px;
+        max-height: 24px;
+        transition: all 0.7s ease-in-out;
+    }
+    
+    .profile__edit-btn:hover {
+        opacity: 0.6;
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+
+    
+    .profile__edit-btn {
+        border: 1px solid white;
+        background-image: url(../../../images/Edit\ Button.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: opacity .5s ease;
+        display: flex;
+        width: 18px;
+        height: 18px;
+        max-width: 24px;
+        max-height: 24px;
+        transition: all 0.7s ease-in-out;
+    }
+    
+    .profile__edit-btn:hover {
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,41 @@
+.popup__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+
+
+    .popup__title {
+        margin: 0;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 40px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+
+
+    .popup__title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 75px;
+    }
+}

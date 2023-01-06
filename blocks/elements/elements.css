@@ -1,0 +1,29 @@
+.elements {
+    width: 880px;
+    height: 744px;
+    margin: auto;
+    margin-bottom: 66px;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+
+    
+    .elements {
+        width: 880px;
+        height: 744px;
+        margin: auto;
+        margin-bottom: 66px;
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+
+    
+    .elements {
+        width: 282px;
+        height: 2268px;
+        margin: auto;
+        margin-bottom: 48px;
+    }
+}
