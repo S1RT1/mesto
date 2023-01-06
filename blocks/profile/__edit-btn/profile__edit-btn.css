@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: center;
-    transition: opacity .5s ease;
     display: flex;
     max-width: 24px;
     max-height: 24px;
@@ -29,7 +28,6 @@
         background-repeat: no-repeat;
         background-size: 24px;
         background-position: center;
-        transition: opacity .5s ease;
         display: flex;
         max-width: 24px;
         max-height: 24px;
@@ -50,7 +48,6 @@
         background-image: url(../../../images/Edit\ Button.svg);
         background-repeat: no-repeat;
         background-position: center;
-        transition: opacity .5s ease;
         display: flex;
         width: 18px;
         height: 18px;

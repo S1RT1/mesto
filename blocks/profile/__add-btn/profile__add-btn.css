@@ -5,7 +5,6 @@
     background-size: 22px;
     background-repeat: no-repeat;
     background-position: center;
-    transition: opacity .5s ease;
     border: 2px solid white;
     border-radius: 2px;
     display: flex;
@@ -27,7 +26,6 @@
         background-size: 22px;
         background-repeat: no-repeat;
         background-position: center;
-        transition: opacity .5s ease;
         border: 2px solid white;
         border-radius: 2px;
         display: flex;
@@ -50,7 +48,6 @@
         background-size: 16px;
         background-repeat: no-repeat;
         background-position: center;
-        transition: opacity .5s ease;
         border: 2px solid white;
         border-radius: 2px;
         display: flex;

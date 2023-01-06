@@ -31,7 +31,7 @@ function submitForm(event) {
 popupForm.addEventListener('submit', submitForm);
 
 
-let like = document.querySelectorAll('#like');
+let like = document.querySelectorAll('.like');
 
 like.forEach(like => {
     like.addEventListener('click', function() {
