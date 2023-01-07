@@ -1,5 +1,5 @@
 .popup__close-btn {
-    background-image: url('../../../images/Close\ Icon.svg');
+    background-image: url('../../../images/close_icon.svg');
     position: absolute;
     background-repeat: no-repeat;
     top: -40px;
@@ -18,16 +18,7 @@
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
 
-    
     .popup__close-btn {
-        background-image: url('../../../images/Close\ Icon.svg');
-        position: absolute;
-        background-repeat: no-repeat;
-        top: -40px;
-        right: -40px;
-        width: 32px;
-        height: 32px;
-        background-size: 32px;
         transition: opacity .5s ease;
         border: none;
     }
@@ -40,7 +31,6 @@
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
 
-    
     .popup__close-btn {
         width: 20px;
         height: 20px;
