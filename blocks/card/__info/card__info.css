@@ -1,6 +1,4 @@
 .card__info {
-    height: 72px;
-    max-height: 72px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
@@ -8,36 +6,3 @@
     margin-left: 21px;
     margin-right: 15px;
 }
-
-
-@media screen and (max-width: 1279px) and (min-width: 768px) {
-
-    
-    .card__info {
-        height: 72px;
-        max-height: 72px;
-        margin-top: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 21px;
-        margin-right: 15px;
-    }
-
-}
-
-
-@media screen and (max-width: 767px) and (min-width: 320px) {
-
-    
-    .card__info {
-        height: 242px;
-        margin-top: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 21px;
-        margin-right: 15px;
-    }
-}
-

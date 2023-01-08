@@ -1,7 +1,6 @@
 .card__title {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -12,47 +11,9 @@
     overflow: hidden;
     width: 195px;
     max-width: 195px;
+    padding-bottom: 3px;
+    height: 72px;
+    max-height: 72px;
+    display: flex;
+    align-items: center;
 }
-
-
-@media screen and (max-width: 1279px) and (min-width: 768px) {
-
-    
-    .card__title {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 29px;
-        color: #000000;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 195px;
-        max-width: 195px;
-    }
-}
-
-
-@media screen and (max-width: 767px) and (min-width: 320px) {
-
-    
-    .card__title {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 29px;
-        color: #000000;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 195px;
-    }
-}
-
-

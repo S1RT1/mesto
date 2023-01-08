@@ -8,13 +8,10 @@
 
 @media screen and (max-width: 1279px) and (min-width: 951px) {
 
-    
+
     .card__container {
-        display: grid;
         grid-template-columns: repeat(auto-fill, 282px);
         grid-template-rows: auto;
-        column-gap: 17px;
-        row-gap: 20px;
         justify-content: center;
     }
 }
@@ -22,13 +19,10 @@
 
 @media screen and (max-width: 950px) and (min-width: 768px) {
 
-    
+
     .card__container {
-        display: grid;
         grid-template-columns: repeat(auto-fill, 282px 282px);
         grid-template-rows: auto;
-        column-gap: 17px;
-        row-gap: 20px;
         justify-content: center;
     }
 }
@@ -36,11 +30,9 @@
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
 
-    
+
     .card__container {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(282px, 282px));
         column-gap: 0;
-        row-gap: 20px;
     }
 }
