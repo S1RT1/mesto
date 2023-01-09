@@ -12,10 +12,7 @@
     padding-right: 10px;
 }
 
-
 @media screen and (max-width: 1279px) and (min-width: 768px) {
-
-
     .footer__title {
         width: 74.576vw;
         padding-left: 0px;
@@ -23,14 +20,10 @@
     }
 }
 
-
 @media screen and (max-width: 767px) and (min-width: 320px) {
-
-
     .footer__title {
         width: 282px;
         margin-bottom: 36px;
-        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
     }
