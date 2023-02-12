@@ -1,0 +1,12 @@
+.mod__img-open {
+    max-width: 75vw;
+    max-height: 75vh;
+    position: relative;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .mod__img-open {
+        width: 240px;
+    }
+}

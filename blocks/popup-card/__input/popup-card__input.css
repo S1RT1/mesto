@@ -1,0 +1,22 @@
+.popup-card__input {
+    min-height: 27px;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 22px;
+    padding-bottom: 6px;
+    font-family: 'Inter', 'Arial', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.popup-card__input:last-of-type {
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .popup-card__input:last-of-type {
+        margin-bottom: 45px;
+    }
+}

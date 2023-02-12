@@ -3,4 +3,7 @@
     max-width: 282px;
     background-color: #ffff;
     border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }

@@ -1,0 +1,26 @@
+.popup-card__btn {
+    height: 50px;
+    background-color: black;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    transition: opacity .5s ease;
+    font-family: 'Inter', 'Arial', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0px;
+}
+
+.popup-card__btn:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .popup-card__btn {
+        height: 46px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
