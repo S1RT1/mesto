@@ -4,3 +4,12 @@
     transition: opacity 0.7s ease-in-out;
 
 }
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

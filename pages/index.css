@@ -48,9 +48,11 @@
 @import url(../blocks/popup-card/__input/_type/popup-card__input_type_name.css);
 @import url(../blocks/popup-card/__btn/popup-card__btn.css);
 @import url(../blocks/popup-card/_opened/popup-card_opened.css);
+@import url(../blocks/mod/mod.css);
 @import url(../blocks/modal/modal.css);
 @import url(../blocks/mod/__title/mod__title.css);
 @import url(../blocks/mod/__close-btn/mod__close-btn.css);
 @import url(../blocks/mod/__img-open/mod__img-open.css);
-@import url(../blocks/mod/mod.css);
 @import url(../blocks/mod/__container/mod__container.css);
+
+@import url(../scripts/style.css);
