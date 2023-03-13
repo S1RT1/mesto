@@ -28,22 +28,7 @@
         <button class="profile__add-btn rst-btn" type="button" aria-label="Добавить фото"></button>
       </section>
 
-
-      <section class="card">
-        <div class="card__pictur">
-          <div class="card__container"></div>
-        </div>
-        <template id="place-template">
-          <article id="D" class="card__elements">
-            <button id="del" class="card__delete-btn rst-btn" type="button" aria-label="Удалить"></button>
-            <img id="myImg" class="card__image card__open-img">
-            <div class="card__info">
-              <h2 id="CT" class="card__title"></h2>
-              <button class="card__like-btn rst-btn like" type="button" aria-label="Лайкнуть"></button>
-            </div>
-          </article>
-        </template>
-      </section>
+      <section class="card" id="products"></section>
     </main>
 
 
@@ -51,6 +36,7 @@
       <p class="footer__title">&copy; 2022 Mesto Russia</p>
     </footer>
   </div>
+
 
   <div class="popup profile-popup">
     <div class="popup__container">
@@ -65,7 +51,6 @@
       </form>
     </div>
   </div>
-
 
 
   <div class="popup popup-card">
@@ -83,7 +68,7 @@
   </div>
 
 
-  <div id="myModal" class="mod">
+  <div id="myModal" class="popup mod">
     <div class="mod__container">
       <img src="#" id="im" class="mod__img-open" alt="фото">
       <button class="mod__close-btn rst-btn" type="button" aria-label="Закрыть редактирование профиля"></button>
@@ -92,9 +77,6 @@
   </div>
 
 
-
-
 <script src="scripts/index.js"></script>
 </body>
-
 </html>
