@@ -27,8 +27,27 @@
         </div>
         <button class="profile__add-btn rst-btn" type="button" aria-label="Добавить фото"></button>
       </section>
-
+<!---
       <section class="card" id="products"></section>
+-->
+<!---->
+      <section class="card">
+          <div id="products" class="card__container">
+
+          </div>
+      </section>
+
+      <template class="card" id="place-template">
+        <article id="D" class="card__elements">
+          <button id="del" class="card__delete-btn rst-btn" type="button" aria-label="Удалить"></button>
+          <img id="myImg" class="card__image card__open-img" src=>
+          <div class="card__info">
+            <h2 id="CT" class="card__title"></h2>
+            <button class="card__like-btn rst-btn like" type="button" aria-label="Лайкнуть"></button>
+          </div>
+        </article>
+      </template>
+
     </main>
 
 
@@ -55,7 +74,7 @@
 
   <div class="popup popup-card">
     <div class="popup-card__container">
-      <button class="popup-card__close-btn rst-btn" type="button" aria-label="Закрыть редактирование профиля"></button>
+      <button class="popup-card__close-btn rst-btn" type="button" aria-label="Закрыть создание новой карточки"></button>
       <h2 class="popup-card__title">Новое место</h2>
       <form class="popup-card__form" name="formPopup">
         <input id="el1" type="text" class="popup-card__input popup-card__input_type_name" name="formPopupName"
@@ -71,7 +90,7 @@
   <div id="myModal" class="popup mod">
     <div class="mod__container">
       <img src="#" id="im" class="mod__img-open" alt="фото">
-      <button class="mod__close-btn rst-btn" type="button" aria-label="Закрыть редактирование профиля"></button>
+      <button class="mod__close-btn rst-btn" type="button" aria-label="Закрыть картинку"></button>
       <div id="caption" class="mod__title"></div>
     </div>
   </div>

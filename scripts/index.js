@@ -12,11 +12,11 @@ const editButtonProfile = document.querySelector('.profile__add-btn');
 const popupFormProfile = document.querySelector('.popup-card__form');
 const cardTitle = document.querySelector('.card__title');
 const cardImage = document.querySelector('.card__image');
-const popup = document.querySelectorAll('.popup');
+const popups = document.querySelectorAll('.popup');
 
 
 function openPopup(index){
-  popup[index].classList.add("popup_opened");
+  popups[index].classList.add("popup_opened");
   nameInput.value = profileName.textContent;
   aboutInput.value = profileAbout.textContent;
 }
@@ -25,7 +25,7 @@ editButton.addEventListener( 'click', ()=> openPopup(0) );
 editButtonProfile.addEventListener( 'click', ()=> openPopup(1) );
 
 function closePopup(index){
-  popup[index].classList.remove("popup_opened");
+  popups[index].classList.remove("popup_opened");
 }
 
 popupCloseButton.addEventListener( 'click', ()=> closePopup(0) );
@@ -75,120 +75,91 @@ let initialCards = [
   },
 ];
 
-const LikeButton = (e) => {
+const lButton = (e) => {
   e.target.classList.toggle('card__like-btn_active');
 }
 
-let massOld = document.getElementById('products');
+// Создание изначальных карточек
+let placesContainer = document.querySelector(".card__container");
+let placeTemplate = document.querySelector("#place-template");
 
-  function createCard() {
-    let massCards = '';
-    initialCards.forEach(({name, link}) => {
-      massCards += `
-      <li class='card__elements'>
-        <img class='card__image' src="${link}" alt='${name}' />
-        <div class='card__info'>
-          <h2 class='card__title'>${name}</h2>
-          <button class='card__like-btn rst-btn like'></button>
-        </div>
-        <button class='card__delete-btn rst-btn" type="button'></button>
-      </li>
-    `;
+initialCards.forEach(({name, link}) => {
+  let placeItem = placeTemplate.content.cloneNode(true);
+  placeItem.querySelector('.card__title').textContent = name;
+  placeItem.querySelector('.card__image').src = link;
+  placeItem.querySelector('.card__image').alt = name;
+  console.log(placeItem);
+  placesContainer.append(placeItem);
 });
 
-  let html = `
-    <ul id='ul' class='card__container'>
-      ${massCards}
-    </ul>
-  `;
-  return html
+likeButton();
+deleteButton();
+cardImg();
+
+// Создание новой карточки
+function createCard() {
+  let valName = document.querySelector('#el1').value;
+  let valLink = document.querySelector('#el2').value;
+  let cardItem = placeTemplate.content.cloneNode(true);
+  cardItem.querySelector('.card__title').textContent = valName;
+  cardItem.querySelector('.card__image').src = valLink;
+  cardItem.querySelector('.card__image').alt = valName;
+  return cardItem
 }
-  
+
 function doomCard() {
   createCard();
   let card = createCard();
-  massOld.insertAdjacentHTML("beforeend", card);
+  placesContainer.prepend(card);
   likeButton();
   deleteButton();
   cardImg();
-}
-doomCard();
-
-
-
-
-
-// Новая карточка
-let massNew = document.getElementById('ul');
-
-function newCard(name, link) {
-  let massCardsNew = '';
-  name = document.querySelector('#el1').value;
-  link = document.querySelector('#el2').value;
-
-  massCardsNew += `
-    <li class='card__elements'>
-      <img class='card__image' src="${link}" alt='${name}' />
-      <div class='card__info'>
-        <h2 class='card__title'>${name}</h2>
-        <button class='card__like-btn rst-btn like'></button>
-      </div>
-      <button class='card__delete-btn rst-btn" type="button'></button>
-    </li>
-  `;
-  return massCardsNew
+  document.querySelector('.popup-card__form').reset();
 }
 
-function doomNew() {
-  newCard();
-  let cardNew = newCard();
-  massNew.insertAdjacentHTML("afterbegin", cardNew);
-  likeButton()
-  deleteButton()
-  cardImg()
-}
+popupFormProfile.addEventListener('submit', doomCard);
 
-popupFormProfile.addEventListener('submit', doomNew);
-
+// Лайк карточки
 function likeButton() {
- let placeElement = document.querySelectorAll('.card__like-btn');
-  placeElement.forEach(b => {
-  b.addEventListener('click', LikeButton);
-})
-}
-
-function deleteButton() {
-  document.querySelectorAll('.card__delete-btn').forEach(c=>c.addEventListener('click', e => {
-    if (e.target.matches('.card__delete-btn'))
-      e.target.closest('.card__elements').remove('li')
-  }))
-}
-
-// Открытие картинки
-function cardImg() {
-  let elem = document.getElementById('caption');
-  let CloseButtonImg = document.querySelector('.mod__close-btn');
-  let editImg = document.querySelectorAll('.card__image');
-
-  editImg.forEach(b => {
-    b.addEventListener('click', ()=> openPopup(2));
-  });
-
-  CloseButtonImg.addEventListener('click', ()=> closePopup(2));
-
-  document.querySelectorAll('.card__image').forEach(bt => {
-  bt.addEventListener('click', () => {
-    let caI = bt.getAttribute('src');
-    img1Src = caI;
-    let imgElem = document.getElementById('im');
-    imgElem.src = img1Src;
-  });
-});
-
-document.querySelectorAll('.card__image').forEach(t => {
-  t.addEventListener('click', function () {
-    elem.innerHTML = t.getAttribute('alt');
-  });
-});
-
-};
+  let placeElement = document.querySelectorAll('.card__like-btn');
+   placeElement.forEach(b => {
+   b.addEventListener('click', lButton);
+ })
+ }
+ 
+ // Удаление карточки
+ function deleteButton() {
+   document.querySelectorAll('.card__delete-btn').forEach(c=>c.addEventListener('click', e => {
+     if (e.target.matches('.card__delete-btn'))
+       e.target.closest('.card__elements').remove('li')
+   }))
+ }
+ 
+ // Открытие картинки
+ function cardImg() {
+   let elem = document.getElementById('caption');
+   let CloseButtonImg = document.querySelector('.mod__close-btn');
+   let editImg = document.querySelectorAll('.card__image');
+ 
+   editImg.forEach(b => {
+     b.addEventListener('click', ()=> openPopup(2));
+   });
+ 
+   CloseButtonImg.addEventListener('click', ()=> closePopup(2));
+ 
+   document.querySelectorAll('.card__image').forEach(bt => {
+   bt.addEventListener('click', () => {
+     let caI = bt.getAttribute('src');
+     img1Src = caI;
+     let imgElem = document.getElementById('im');
+     imgElem.src = img1Src;
+   });
+ });
+ 
+ document.querySelectorAll('.card__image').forEach(t => {
+   t.addEventListener('click', function () {
+     elem.innerHTML = t.getAttribute('alt');
+   });
+ });
+ 
+ };
